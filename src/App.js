@@ -1,14 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+// import './App.css';
+import Footer from './components/footer/footer';
+import 'bootstrap/dist/css/bootstrap.css';
+import Accordion from './components/accordion/accordion'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <h1>Pin Web Fullstack</h1>
-        
-      </header>
+    <div>
+      <Accordion />
+      <Footer />
     </div>
   );
 }
