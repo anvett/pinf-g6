@@ -1,3 +1,53 @@
+# **Proyecto Integrador - FULLSTACK**
+---
+# Introduction
+
+The objective of this application is to display a One page in ReactJ. 
+
+&nbsp;
+
+# Demo 
+
+landing
+
+&nbsp;
+
+# technologies used 🛠️
+
+- HTML5, CSS, Javascript.
+- ReactJs
+- Bootstrap
+- React Bootstrap
+
+# Instructions 🚀 
+
+1. 
+2.
+3.
+
+&nbsp;
+
+
+# Author ✒️
+ Grupo 6 - CFS2205 
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -67,4 +117,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

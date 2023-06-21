@@ -6,10 +6,19 @@ import Imalogo from '../../assets/135321382_1541252649399166_3805080622442541819
 
 const footer = () => {
   return (
-    <div className='d-flex justify-content-between align-items-center footer p-5'>
-        <p>© 2023. Todos los derechos reservados.</p>
-      <img src={Imalogo} alt="Logo" className="logo" />
+    <div className='footer'>
+      <div className='container'>
+        <div className='row align-items-center justify-content-between'>
+          <div className='col-lg-10 col-sm-12'>
+            <p className='text-center text-lg-start mt-2'>© 2023. Todos los derechos reservados.</p>
+          </div>
+          <div className='col-lg-2 col-sm-12 text-center'>
+            <img src={Imalogo} alt="Logo"/>
+          </div>
+        </div>
+      </div>
     </div>
+
   )
 }
 
