@@ -34,15 +34,15 @@ p {
   color:#19ab19;
 }
 
-.btn {
+.btnnv {
   border: none;
   border-radius: 25px;
   color:white;
-  background-color: rgb(255, 255, rgb(69, 201, 52));
-  width: 50%;
+  background-color: #19ab19;
   transition: 1s;
+  padding:10px 20px;
 }
-.btn:hover {
+.btnnv:hover {
   border: 1px solid #073938;
   background-color: #0e6b6a;
 }
