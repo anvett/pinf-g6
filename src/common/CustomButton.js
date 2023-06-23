@@ -1,21 +1,11 @@
 import React from 'react'
+import './custombutton.css'
 
-function CustomButton({ text, link }) {
-    const buttonStyles = {
-      border: '1px solid #19ab19',
-      borderRadius: '25px',
-      color: 'white',
-      backgroundColor: '#19ab19',
-      transition: '1s',
-      padding: '5px 20px',
-    };
+function Custombutton({ text, link }) {
   
     return (
-      <a href={link} style={buttonStyles}>
-        {text}
-      </a>
+      <a href={link} className="custom-button">{text}</a>
     );
-  }
-  
-  export default CustomButton;
-  
+    }
+
+  export default Custombutton;
