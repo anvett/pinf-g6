@@ -2,9 +2,7 @@ import React from 'react';
 import './footer.css';
 import Imalogo from '../../assets/135321382_1541252649399166_3805080622442541819_n.jpg';
 
-
-
-const footer = () => {
+function Footer() {
   return (
     <div className='footer'>
       <div className='container'>
@@ -18,11 +16,7 @@ const footer = () => {
         </div>
       </div>
     </div>
-
-  )
+  );
 }
 
-
-
-
-export default footer;
+export default Footer;

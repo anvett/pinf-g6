@@ -35,14 +35,14 @@ p {
 }
 
 .btnnv {
-  border: none;
+  border: 1px solid #19ab19;
   border-radius: 25px;
   color:white;
   background-color: #19ab19;
   transition: 1s;
-  padding:10px 20px;
+  padding:5px 20px;
 }
 .btnnv:hover {
-  border: 1px solid #073938;
-  background-color: #0e6b6a;
+  border: 1px solid #c6caca;
+  background-color: #128812
 }

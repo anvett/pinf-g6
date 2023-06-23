@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 
-const About = () => {
+function About() {
   return (
     <div name='about' className='py-5 my-5'>
       <div className="row py-5 my-5">
@@ -13,8 +13,7 @@ const About = () => {
         </div>
         <div className='col'></div>
       </div>
-      </div>
-
+    </div>
   );
 }
 
