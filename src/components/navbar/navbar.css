@@ -6,7 +6,7 @@
     box-shadow: 2px 2px #19ab19;
     top: 0;
     z-index: 1;
-    background-color: rgb(255 255 255 / 51%);
+    background-color: rgba(20, 19, 19, 0.51);
   }
  
   .navbar-menu ul {
@@ -21,7 +21,7 @@
   
   .navbar-menu li a {
     text-decoration: none;
-    color:black;
+    color:white;
   }
   .navbar-menu li a:hover {
     text-decoration: underline;

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import './navbar.css';
-import Nlogo from '../../assets/logo-neva.jpg';
+import Nlogo from '../../assets/135321382_1541252649399166_3805080622442541819_n.jpg';
 import { Link } from 'react-scroll';
 
 function Navbar() {
   const [NavExpanded, setNavExpanded] = useState(false);
 
   return (
-    <nav className="navbar">
-      <a href="/" className="ms-4"><img src={Nlogo} alt="NLogo" /></a>
+    <nav className="navbar container-fluid">
+      <a href="/" className="ms-4"><img className="w-50" src={Nlogo} alt="NLogo" /></a>
       <div className={NavExpanded ? "navbar-menu expanded" : "navbar-menu"}>
         <ul>
           <li><a href="/home"><Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={50}>Home</Link></a></li>
