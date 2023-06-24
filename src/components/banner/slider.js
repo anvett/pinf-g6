@@ -5,7 +5,7 @@ import FirstIma from '../../assets/slider-banner-1.jpg'
 import SecondIma from '../../assets/slider-banner-2.jpg'
 import ThirdIma from '../../assets/slider-banner-3.jpg'
 // import './slider.css';
-import CustomButton from '../../common/CustomButton'
+import Custombutton from '../../common/custombutton'
 
 function Slider() {
 
@@ -19,7 +19,7 @@ function Slider() {
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <CustomButton text="Botón 1" link="" />
+          <Custombutton text="Botón 1" link="" />
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
@@ -27,7 +27,7 @@ function Slider() {
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <CustomButton text="Botón 1" link="" />
+          <Custombutton text="Botón 1" link="" />
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
@@ -35,13 +35,13 @@ function Slider() {
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <CustomButton text="Botón 1" link="" />
+          <Custombutton text="Botón 1" link="" />
         </Carousel.Caption>
-        {/* <div className="carousel-description">
+        <div className="carousel-description">
           <h1>Lorem ipsum dolor sit amet</h1>
           <h2>Neva</h2>
-          <CustomButton text="Botón 3" link="" />
-        </div> */}
+          <Custombutton text="Botón 3" link="" />
+        </div>
       </Carousel.Item>
     </Carousel>
   )
