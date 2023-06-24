@@ -6,7 +6,7 @@ import SeIma from '../../assets/product2.jpg'
 
 function Products() {
   return (
-    <div className="container-fluid bg-colors">
+    <div name='products' className="container-fluid bg-colors">
       <div className="row py-5">
         <div className="col">
         </div>
