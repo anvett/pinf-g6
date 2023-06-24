@@ -13,7 +13,7 @@ function Slider() {
   const handleSelect = (selectedIndex) => { setIndex(selectedIndex); }
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel name='home' activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item interval={8000}>
         <img className="d-block w-100" src={FirstIma} alt="First slide" />
         <div className="position-absolute top-50 start-0 translate-middle-y bg-dark bg-opacity-25 text-white p-4">
