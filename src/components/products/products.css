@@ -1,0 +1,22 @@
+.bg-colors {
+  background: linear-gradient(to right, #eceaea 70%, #030303 30%);
+}
+
+.bg-slider {
+  background-image: url(../../assets/slider-banner-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+h2 {
+  color: white;
+}

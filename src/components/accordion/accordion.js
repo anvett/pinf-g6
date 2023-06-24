@@ -1,5 +1,5 @@
 import React from 'react';
-import Accordion from 'react-bootstrap/Accordion';
+// import Accordion from 'react-bootstrap/Accordion';
 import './accordion.css';
 
 const accordion = () => {
@@ -7,8 +7,8 @@ const accordion = () => {
 
         <div name='services' className="container-fluid">
             <div className="row">
-                <div className="col-lg-5 col-md-6 col-sm-12 align-items-center d-flex">
-                        <Accordion className="custom-accordion" defaultActiveKey={['0']} alwaysOpen>
+                <div className="col-lg-6 col-md-6 col-sm-12 align-items-center d-flex">
+                        {/* <Accordion className="custom-accordion" defaultActiveKey={['0']} alwaysOpen>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>Accordion Item #1</Accordion.Header>
                                 <Accordion.Body>
@@ -29,9 +29,9 @@ const accordion = () => {
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 </Accordion.Body>
                             </Accordion.Item>
-                        </Accordion>
+                        </Accordion> */}
                 </div>
-                <div className="col-lg-7 col-md-6 col-sm-12 background-accordion-section">
+                <div className="col-lg-6 col-md-6 col-sm-12 background-accordion-section">
                 </div>
             </div>
         </div>

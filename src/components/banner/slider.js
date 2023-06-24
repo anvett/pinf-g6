@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import FirstIma from '../../assets/slider-banner-1.jpg'
+import FirstIma from '../../assets//slidercentrado_1.jpg'
 import SecondIma from '../../assets/slider-banner-2.jpg'
 import ThirdIma from '../../assets/slider-banner-3.jpg'
-// import './slider.css';
 import Custombutton from '../../common/custombutton'
+import './slider.css'
 
 function Slider() {
 
@@ -16,30 +16,25 @@ function Slider() {
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item interval={8000}>
         <img className="d-block w-100" src={FirstIma} alt="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Custombutton text="Botón 1" link="" />
-        </Carousel.Caption>
+        <div className="position-absolute top-50 start-0 translate-middle-y bg-dark bg-opacity-25 text-white p-4">
+          <h1 className='pb-4'>ReNevatuoutfitt</h1>
+          <h3 className='pb-4'>Neva vuelve de un viaje mágico con gente muy especial</h3>
+          <Custombutton text="Botón 3" link="" />
+        </div>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
         <img className="d-block w-100" src={SecondIma} alt="Second slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Custombutton text="Botón 1" link="" />
-        </Carousel.Caption>
+        <div className="position-absolute top-50 start-0 translate-middle-y bg-dark bg-opacity-25 text-white p-4">
+        <h1 className='pb-4'>ReNevatuoutfitt</h1>
+          <h3 className='pb-4'>Neva vuelve de un viaje mágico con gente muy especial</h3>
+          <Custombutton text="Botón 3" link="" />
+        </div>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
         <img className="d-block w-100" src={ThirdIma} alt="Third slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Custombutton text="Botón 1" link="" />
-        </Carousel.Caption>
-        <div className="carousel-description">
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <h2>Neva</h2>
+        <div className="position-absolute top-50 start-0 translate-middle-y bg-dark bg-opacity-25 text-white p-4">
+        <h1 className='pb-4'>ReNevatuoutfitt</h1>
+          <h3 className='pb-4'>Neva vuelve de un viaje mágico con gente muy especial</h3>
           <Custombutton text="Botón 3" link="" />
         </div>
       </Carousel.Item>
