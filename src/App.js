@@ -5,6 +5,9 @@ import Slider from './components/banner/slider';
 import About from './components/about/about'
 import Accordion from './components/accordion/accordion'
 import Footer from './components/footer/footer';
+import Formulary from './components/form/form';
+
+
 
 
 
@@ -15,6 +18,7 @@ function App() {
       <Slider />
       <About />
       <Accordion />
+      <Formulary />
       <Footer />
       
     </div>
