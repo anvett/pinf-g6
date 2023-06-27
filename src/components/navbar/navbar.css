@@ -53,22 +53,22 @@
   
     .navbar-menu ul {
       position: absolute;
-      top: 100px;
+      top: 92px;
       left: 0;
       width: 100%;
       height: calc(100vh - 60px);
-      background-color: white;
+      background-color: black;
       border-top: 1px solid #19ab19;
       display: none;
     }
   
     .navbar-menu li {
       text-align: center;
-      margin: 1rem;
+      margin: 4rem;
     }
 
     .navbar-menu li:hover {
-      background-color: #eee;
+      background-color: #0b0a0a;
     }
   
     .navbar-menu.expanded ul {
