@@ -1,11 +1,15 @@
 import React from 'react'
 import './custombutton.css'
+import { Link } from 'react-scroll';
+
 
 function Custombutton({ text, link }) {
-  
-    return (
-      <a href={link} className="custom-button">{text}</a>
-    );
-    }
 
-  export default Custombutton;
+  return (
+    <Link activeClass="active" to={link} spy={true} smooth={true} offset={50} duration={500} className="custom-button">
+      {text}
+    </Link>
+  );
+}
+
+export default Custombutton;
