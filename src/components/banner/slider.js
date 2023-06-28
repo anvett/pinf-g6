@@ -19,7 +19,7 @@ function Slider() {
         <div className="position-absolute top-50 start-0 translate-middle-y text-white p-4 ps-5">
           <h1 className='pb-4'>Descubre nuestra nueva colección</h1>
           <h3 className='pb-4'>Neva vuelve de un viaje mágico con gente muy especial</h3>
-          <Custombutton text="Ver colecciónn" link="products" />
+          <Custombutton text="Ver Colección" link="products" />
         </div>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
@@ -27,15 +27,15 @@ function Slider() {
         <div className="position-absolute top-50 start-0 translate-middle-y text-white p-4 ps-5">
         <h1 className='pb-4'>Experimenta los beneficios de Neva</h1>
           <h3 className='pb-4'>Descubre cómo nuestras gorras pueden mejorar tu estilo de vida</h3>
-          <Custombutton text="Ver beneficios" link="services" />
+          <Custombutton text="Ver Beneficios" link="services" />
         </div>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
         <img className="d-block w-100" src={ThirdIma} alt="Third slide" />
         <div className="position-absolute top-50 start-0 translate-middle-y text-white p-4 ps-5">
         <h1 className='pb-4'>Para más información</h1>
-          <h3 className='pb-4'>Estamos aquí para responder tus preguntas y brindarte el mejor servicio</h3>
-          <Custombutton text="Contactarnos" link="contact" />
+          <h3 className='pb-4'>Estamos para responder tus preguntas y brindarte el mejor servicio</h3>
+          <Custombutton text="Contáctanos Aquí" link="contact" />
         </div>
       </Carousel.Item>
     </Carousel>

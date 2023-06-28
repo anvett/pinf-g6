@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 function Custombutton({ text, link }) {
 
   return (
-    <Link activeClass="active" to={link} spy={true} smooth={true} offset={50} duration={500} className="custom-button">
+    <Link activeClass="active" to={link} spy={true} smooth={true} duration={50} className="custom-button">
       {text}
     </Link>
   );
