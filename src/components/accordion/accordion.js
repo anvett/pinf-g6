@@ -10,27 +10,15 @@ const accordion = () => {
                 <div className="col-md-6 col-sm-12 d-flex align-items-center">
                     <Accordion className="w-100" defaultActiveKey="0" flush>
                         <Accordion.Item ClassName="" eventKey="0">
-                            <Accordion.Header>Accordion Item #1</Accordion.Header>
+                            <Accordion.Header>Sé audaz y destaca con NEVA</Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
+                            ¿Estás listo para marcar tendencia y destacar entre la multitud? En NEVA, te ofrecemos las gorras más modernas y vanguardistas del mercado. Nuestras gorras personalizadas son el accesorio perfecto para expresar tu estilo único y atrevido. Con una amplia gama de colores y diseños exclusivos, te aseguramos que encontrarás la gorra perfecta para complementar tu look y resaltar tu personalidad. Únete a la comunidad de NEVA y déjate llevar por la moda y la innovación. ¡No esperes más para lucir audaz y marcar la diferencia con NEVA!
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="1">
-                            <Accordion.Header>Accordion Item #2</Accordion.Header>
+                            <Accordion.Header>Descubre la pasión por la moda con NEVA</Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
+                            En NEVA, nos apasiona la moda y queremos compartir esa pasión contigo. Nuestras gorras son mucho más que simples accesorios, son una declaración de estilo y autenticidad. Diseñadas con atención meticulosa a los detalles, nuestras gorras te brindan ese toque de distinción que estás buscando. Además, gracias a nuestra tecnología de resistencia al agua y la suciedad, podrás mantener tu estilo impecable sin importar las condiciones. Descubre la pasión por la moda con NEVA y déjate llevar por el encanto de nuestras gorras. ¡Atrévete a destacar y sé el centro de atención donde quiera que vayas!
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
