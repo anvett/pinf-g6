@@ -33,8 +33,8 @@ function Slider() {
       <Carousel.Item interval={4000}>
         <img className="d-block w-100" src={ThirdIma} alt="Third slide" />
         <div className="position-absolute top-50 start-0 translate-middle-y text-white p-4 ps-5">
-        <h1 className='pb-4'>Para más información</h1>
-          <h3 className='pb-4'>Estamos para responder tus preguntas<br></br>y brindarte el mejor servicio</h3>
+        <h1 className='pb-4'>Forma parte de nuestra comunidad</h1>
+          <h3 className='pb-4'>Descubre un mundo de estilo y aventura<br></br> con personas apasionadas como tú</h3>
           <Custombutton text="Contáctanos Aquí" link="contact" />
         </div>
       </Carousel.Item>
