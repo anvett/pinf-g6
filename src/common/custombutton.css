@@ -6,5 +6,11 @@
     transition: 1s;
     padding: 9px 20px;
     text-decoration: none;
+    cursor: pointer;
+  }
+
+  .custom-button:hover {
+    background-color: #495057;
+
   }
   

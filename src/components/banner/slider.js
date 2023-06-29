@@ -14,27 +14,27 @@ function Slider() {
 
   return (
     <Carousel name='home' className="carousel-top" activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item interval={8000}>
+      <Carousel.Item interval={2000}>
         <img className="d-block w-100" src={FirstIma} alt="First slide" />
-        <div className="position-absolute top-50 start-0 translate-middle-y text-white p-4 ps-5">
+        <div className="position-absolute top-50 start-0 translate-middle-y text-white pe-4 ps-5 pb-4">
           <h1 className='pb-4'>Descubre nuestra nueva colección</h1>
-          <h3 className='pb-4'>Neva vuelve de un viaje mágico con gente muy especial</h3>
+          <h3 className='pb-4'>Neva vuelve de un viaje mágico<br></br>con gente muy especial</h3>
           <Custombutton text="Ver Colección" link="products" />
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={8000}>
+      <Carousel.Item interval={4000}>
         <img className="d-block w-100" src={SecondIma} alt="Second slide" />
         <div className="position-absolute top-50 start-0 translate-middle-y text-white p-4 ps-5">
         <h1 className='pb-4'>Experimenta los beneficios de Neva</h1>
-          <h3 className='pb-4'>Descubre cómo nuestras gorras pueden mejorar tu estilo de vida</h3>
+          <h3 className='pb-4'>Descubre cómo nuestras gorras<br></br>pueden mejorar tu estilo de vida</h3>
           <Custombutton text="Ver Beneficios" link="services" />
         </div>
       </Carousel.Item>
-      <Carousel.Item interval={8000}>
+      <Carousel.Item interval={4000}>
         <img className="d-block w-100" src={ThirdIma} alt="Third slide" />
         <div className="position-absolute top-50 start-0 translate-middle-y text-white p-4 ps-5">
         <h1 className='pb-4'>Para más información</h1>
-          <h3 className='pb-4'>Estamos para responder tus preguntas y brindarte el mejor servicio</h3>
+          <h3 className='pb-4'>Estamos para responder tus preguntas<br></br>y brindarte el mejor servicio</h3>
           <Custombutton text="Contáctanos Aquí" link="contact" />
         </div>
       </Carousel.Item>
