@@ -15,17 +15,17 @@ function Products() {
             <Carousel.Item>
               <img className="d-block w-100" src={FiIma} alt="Second slide" />
               <div className="position-absolute bottom-0 end-0 text-start p-4 bg-dark bg-opacity-75 w-100">
-                <h3 className="py-2">Diseño ligero con perfil bajo</h3>
-                <h2 className="py-2">ASTRO ELIO</h2>
-                <h3 className="py-2">Five panel en tejido impermeable de la más alta calidad.🎨 Beige y verde.</h3>
+                <h3 className="pt-2 mx-4">Diseño ligero con perfil bajo</h3>
+                <h2 className="pb-2 ms-4">ASTRO ELIO</h2>
+                <h3 className="py-2 mx-4">Five panel en tejido impermeable de la más alta calidad.🎨 Beige y verde.</h3>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <img className="d-block w-100" src={SeIma} alt="Second slide" />
               <div className="position-absolute bottom-0 end-0 text-start p-4 bg-dark bg-opacity-75 w-100">
-              <h3 className="py-2">Diseño ligero con perfil bajo</h3>
-                <h2 className="py-2">ASTRO BONE</h2>
-                <h3 className="py-2">Five panel en tejido impermeable de la más alta calidad. Diseño ligero con perfil bajo</h3>
+                <h3 className="pt-2 mx-4">Diseño ligero con perfil bajo</h3>
+                <h2 className="pb-2 ms-4">ASTRO BONE</h2>
+                <h3 className="py-2 mx-4">Five panel en tejido impermeable de la más alta calidad. Diseño ligero con perfil bajo</h3>
               </div>
             </Carousel.Item>
           </Carousel>

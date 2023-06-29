@@ -13,6 +13,10 @@
     --bs-accordion-active-bg: #495057;
 }
 
+.accordion-button {
+    font-weight: 600;
+}
+
 @media screen and (max-width: 550px) {
     .background-section {
         background-size: cover;
