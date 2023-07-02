@@ -6,7 +6,8 @@ import About from './components/about/about'
 import Products from './components/products/products'
 import Accordion from './components/accordion/accordion'
 import Footer from './components/footer/footer';
-import Formulary from './components/form/form';
+import { Form2 } from './components/form/form2';
+
 
 
 
@@ -20,7 +21,7 @@ function App() {
       <About />
       <Products />
       <Accordion />
-      <Formulary />
+      <Form2 />
       <Footer />
       
     </div>
