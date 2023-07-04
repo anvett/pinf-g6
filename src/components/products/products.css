@@ -1,0 +1,19 @@
+.bg-colors {
+  background: linear-gradient(to right, #eceaea 70%, #030303 30%);
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+@media (min-width: 550px) {
+  .carousel-inner .position-absolute {
+    width: 50% !important;
+  }
+}

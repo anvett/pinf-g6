@@ -1,0 +1,26 @@
+.contentForm{
+    background-color: black;
+    color: white;
+
+}
+
+.colForm{
+    margin-left: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+
+.imageForm{
+    width: 70%;
+    height: 70%;
+}
+
+.error{
+    color: red;
+    position: absolute;
+    font-size: 1rem;
+    
+    
+}
+
