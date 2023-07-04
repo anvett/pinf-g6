@@ -4,6 +4,9 @@ import "./form2.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import axios from 'axios';
+
+
 
 export const Form2 = () => {
   const userSchema = yup.object().shape({
@@ -11,11 +14,11 @@ export const Form2 = () => {
       .string()
       .max(35, "Debe tener 35 caracteres o menos")
       .required("El nombre es requerido"),
-    email: yup
+    correo: yup
       .string()
       .email("email incorrecto")
       .required("email es requerido"),
-    fono: yup
+    telefono: yup
       .number()
       .positive()
       .integer()
@@ -25,9 +28,16 @@ export const Form2 = () => {
   const { register, handleSubmit, formState: {errors} } = useForm({
     resolver: yupResolver(userSchema),
   });
-
+/*conexión a base de datos*/
   const onSubmit = (data) => {
     console.log(data);
+    axios.post('http://localhost/pinfsg6back-app/public/index.php/api/registrapersona', data)
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
   };
 
   return (
@@ -59,7 +69,7 @@ export const Form2 = () => {
                 id="emailForm"
                 aria-describedby="emailHelp"
                 autoComplete="off"
-                {...register("email")}
+                {...register("correo")}
               />
               <p className="error"> {errors.email?.message}</p>
             </div>
@@ -72,9 +82,9 @@ export const Form2 = () => {
                 className="form-control shadow-none"
                 id="telForm"
                 autoComplete="off"
-                {...register("fono")}
+                {...register("telefono")}
               />
-              <p className="error"> {errors.fono?.message}</p>
+              <p className="error"> {errors.telefono?.message}</p>
             </div>
             <div className="mb-5">
               <label htmlFor="textMessage" className="form-label">
@@ -86,7 +96,7 @@ export const Form2 = () => {
                 id="messageForm"
                 rows={3}
                 autoComplete="off"
-                {...register("comment")}
+                {...register("mensaje")}
               />
             </div>
 
