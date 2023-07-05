@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import FirstIma from '../../assets//slidercentrado_1.jpg'
+import FirstIma from '../../assets/slidercentrado_1_clipdrop-enhance.webp'
 import SecondIma from '../../assets/slider-banner-2.jpg'
-import ThirdIma from '../../assets/slider-banner-3.jpg'
+import ThirdIma from '../../assets/slider-banner-3_clipdrop-enhance.webp'
 import Custombutton from '../../common/cusbutton'
 import './slider.css'
 

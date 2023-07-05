@@ -1,8 +1,8 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import './products.css'
-import FiIma from '../../assets/product1.jpg'
-import SeIma from '../../assets/product2.jpg'
+import FiIma from '../../assets/product1_clipdrop-enhance.webp'
+import SeIma from '../../assets/product2_clipdrop-enhance.webp'
 
 function Products() {
   return (
