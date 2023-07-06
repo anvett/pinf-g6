@@ -1,5 +1,10 @@
 .bg-colors {
-  background: linear-gradient(to right, #eceaea 70%, #030303 30%);
+  background: linear-gradient(to right, #434242 70%, #24272a 30%);
+}
+
+.bg-slider-prod {
+  background-color: #19ab19;
+  opacity: 0.90;
 }
 
 h3 {
