@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './navbar.css';
-import Nlogo from '../../assets/135321382_1541252649399166_3805080622442541819_n.jpg';
+import Nlogo from '../../assets/135321382_15.jpg';
 import { Link } from 'react-scroll';
 
 function Navbar() {
