@@ -11,18 +11,15 @@ export const Form2 = () => {
       .string()
       .max(35, "Debe tener 35 caracteres o menos")
       .required("El nombre es requerido"),
-    email: yup
-      .string()
-      .email("email incorrecto")
-      .required("email es requerido"),
-    fono: yup
-      .number()
-      .positive()
-      .integer()
-      .required("Phone number is required"),
+    email: yup.string().email("email incorrecto").required("email es requerido"),
+    fono: yup.number().positive().integer().required("Phone number is required"),
   });
 
-  const { register, handleSubmit, formState: {errors} } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
     resolver: yupResolver(userSchema),
   });
 
@@ -30,8 +27,29 @@ export const Form2 = () => {
     console.log(data);
   };
 
+  var alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+  var alertTrigger = document.getElementById("register");
+
+  function alert(message, type) {
+    var wrapper = document.createElement("div");
+    wrapper.innerHTML =
+      '<div class="alert alert-' +
+      type +
+      ' alert-dismissible" role="alert">' +
+      message +
+      '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+
+    alertPlaceholder.append(wrapper);
+  }
+
+  if (alertTrigger) {
+    alertTrigger.addEventListener("click", function () {
+      alert("Registro exitoso", "success");
+    });
+  }
+
   return (
-    <div  name='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
+    <div name="contact" class="container-fluid contentForm pt-5 mt-5 pb-5 ">
       <div class="row ">
         <div class="col colForm d-flex justify-content-center align-items-center flex-column ">
           <h2 class="form-title pb-3">Sign Up</h2>
@@ -89,18 +107,14 @@ export const Form2 = () => {
                 {...register("comment")}
               />
             </div>
-
+            <div id="liveAlertPlaceholder"></div>
             <button id="register" type="submit" className=" btn  btn-success">
               Registro
             </button>
           </form>
         </div>
         <div class="col-md-6  d-flex align-items-center justify-content-center ">
-          <img
-            class="imageForm img-fluid"
-            src={formIma}
-            alt="Imagen de formulario"
-          />
+          <img class="imageForm img-fluid" src={formIma} alt="Imagen de formulario" />
         </div>
       </div>
     </div>
