@@ -40,6 +40,10 @@ export const Form2 = () => {
         });
   };
 
+  
+
+  
+
   return (
     <div  name='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
       <div class="row ">
@@ -99,9 +103,12 @@ export const Form2 = () => {
                 {...register("mensaje")}
               />
             </div>
-
-            <button id="register" type="submit" className=" btn  btn-success">
+            <div id="liveAlertPlaceholder"></div>
+            <button id="register" type="submit" className=" btn  btn-success  m-4">
               Registro
+            </button>
+            <button id="register" type="reset" className=" btn  btn-danger m-3">
+              Reset
             </button>
           </form>
         </div>
