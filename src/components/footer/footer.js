@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import Imalogo from '../../assets/135321382_1541252649399166_3805080622442541819_n.jpg';
+import Imalogo from '../../assets/135321382_15.jpg';
 
 function Footer() {
   return (

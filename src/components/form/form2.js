@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import formIma from "../../assets/formulario.jpg";
+// import React, { useState } from "react";
+import formIma from "../../assets/formulario.webp";
 import "./form2.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -46,11 +46,12 @@ export const Form2 = () => {
 
   return (
     <div  name='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
-      <div class="row ">
-        <div class="col colForm d-flex justify-content-center align-items-center flex-column ">
-          <h2 class="form-title pb-3">Sign Up</h2>
-          <form className="formulary w-75" onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-5">
+      <div class="row py-5 my-5">
+        <div class="col colForm p-5 mx-4">
+          <h2 class="form-title">Contacta</h2>
+          <h2 class="subtittle-title pb-3">con nosotros</h2>
+          <form className="formulary w-100" onSubmit={handleSubmit(onSubmit)}>
+            <div className="mb-2">
               <label htmlFor="InputName" className="form-label">
                 Nombre
               </label>
@@ -63,7 +64,7 @@ export const Form2 = () => {
               />
               <p className="error"> {errors.nombre?.message}</p>
             </div>
-            <div className="mb-5">
+            <div className="mb-2">
               <label htmlFor="InputEmail1" className="form-label">
                 email
               </label>
@@ -77,7 +78,7 @@ export const Form2 = () => {
               />
               <p className="error"> {errors.email?.message}</p>
             </div>
-            <div className="mb-5">
+            <div className="mb-2">
               <label htmlFor="InputPhone" className="form-label">
                 Teléfono
               </label>
@@ -90,7 +91,7 @@ export const Form2 = () => {
               />
               <p className="error"> {errors.telefono?.message}</p>
             </div>
-            <div className="mb-5">
+            <div className="mb-2">
               <label htmlFor="textMessage" className="form-label">
                 Comentario
               </label>
@@ -103,8 +104,8 @@ export const Form2 = () => {
                 {...register("mensaje")}
               />
             </div>
-            <div id="liveAlertPlaceholder"></div>
-            <button id="register" type="submit" className=" btn  btn-success  m-4">
+
+            <button id="register" type="submit" className=" btn  btn-success">
               Registro
             </button>
             <button id="register" type="reset" className=" btn  btn-danger m-3">
@@ -112,7 +113,7 @@ export const Form2 = () => {
             </button>
           </form>
         </div>
-        <div class="col-md-6  d-flex align-items-center justify-content-center ">
+        <div class="col-md-6  d-flex align-items-center justify-content-center p-5">
           <img
             class="imageForm img-fluid"
             src={formIma}
