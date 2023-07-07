@@ -1,5 +1,5 @@
 .background-section {
-    background-image: url('../../assets/270108148_615522009731972_2618354039966557851_n.jpg');
+    background-image: url('../../assets/270108148_n.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -10,7 +10,7 @@
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-bg: #eceaea;
     --bs-accordion-active-color: white;
-    --bs-accordion-active-bg: #495057;
+    --bs-accordion-active-bg: #19ab19;
 }
 
 .accordion-button {

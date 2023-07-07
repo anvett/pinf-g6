@@ -20,11 +20,13 @@ body {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 48px!important;
+  font-weight: 600!important;
 
 }
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 39px!important;
+  font-weight: 600!important;
 }
 
 
