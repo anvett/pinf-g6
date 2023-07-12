@@ -22,103 +22,72 @@ export const Form2 = () => {
       .number()
       .positive()
       .integer()
-      .required("Phone number is required"),
+      .required("Numero requerido"),
   });
 
-  const { register, handleSubmit, formState: {errors} } = useForm({
+  const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(userSchema),
   });
-/*conexión a base de datos*/
+
+  
+  /*conexión a base de datos*/
   const onSubmit = (data) => {
     console.log(data);
-    axios.post('http://localhost/pinfsg6back-app/public/index.php/api/registrapersona', data)
-        .then((response) => {
-            console.log(response);
-        })
-        .catch((error) => {
-            console.log(error);
-        });
+    axios.post('#', data)
+      .then((response) => {
+        console.log(response);
+        alert('Registro exitoso');
+      })
+      .catch((error) => {
+        console.log(error);
+        alert('Ocurrió un error al enviar el formulario');
+      });
   };
 
-  
 
-  
+
+
 
   return (
-    <div  name='contact' class="container-fluid contentForm pt-5 mt-5 pb-5 ">
-      <div class="row py-5 my-5">
-        <div class="col colForm p-5 mx-4">
-          <h2 class="form-title">Contacta</h2>
-          <h2 class="subtittle-title pb-3">con nosotros</h2>
+    <div name='contact' className="container-fluid contentForm pt-5 mt-5 pb-5 ">
+      <div className="row py-5 my-5">
+        <div className="col colForm p-5 mx-4">
+          <h2 className="form-title">Contacta</h2>
+          <h2 className="subtittle-title pb-3">con nosotros</h2>
           <form className="formulary w-100" onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-2">
-              <label htmlFor="InputName" className="form-label">
-                Nombre
-              </label>
-              <input
-                type="text"
-                className=" form-control shadow-none  "
-                id="nameForm"
-                autoComplete="off"
+              <label htmlFor="nameForm" className="form-label">Nombre</label>
+              <input type="text" className=" form-control shadow-none  " id="nameForm" autoComplete="off"
                 {...register("nombre")}
               />
               <p className="error"> {errors.nombre?.message}</p>
             </div>
             <div className="mb-2">
-              <label htmlFor="InputEmail1" className="form-label">
-                email
-              </label>
-              <input
-                type="email"
-                className="form-control shadow-none"
-                id="emailForm"
-                aria-describedby="emailHelp"
-                autoComplete="off"
+              <label htmlFor="emailForm" className="form-label">email</label>
+              <input type="email" className="form-control shadow-none" id="emailForm" aria-describedby="emailHelp" autoComplete="off"
                 {...register("correo")}
               />
-              <p className="error"> {errors.email?.message}</p>
+              <p className="error"> {errors.correo?.message}</p>
             </div>
             <div className="mb-2">
-              <label htmlFor="InputPhone" className="form-label">
-                Teléfono
-              </label>
-              <input
-                type="number"
-                className="form-control shadow-none"
-                id="telForm"
-                autoComplete="off"
+              <label htmlFor="telForm" className="form-label">Teléfono</label>
+              <input type="number" className="form-control shadow-none" id="telForm" autoComplete="off"
                 {...register("telefono")}
               />
               <p className="error"> {errors.telefono?.message}</p>
             </div>
             <div className="mb-2">
-              <label htmlFor="textMessage" className="form-label">
-                Comentario
-              </label>
-              <textarea
-                type="text"
-                className="form-control shadow-none"
-                id="messageForm"
-                rows={3}
-                autoComplete="off"
+              <label htmlFor="messageForm" className="form-label">Comentario</label>
+              <textarea type="text" className="form-control shadow-none" id="messageForm" rows={2} autoComplete="off"
                 {...register("mensaje")}
               />
             </div>
-
-            <button id="register" type="submit" className=" btn  btn-success">
-              Registro
-            </button>
-            <button id="register" type="reset" className=" btn  btn-danger m-3">
-              Reset
-            </button>
+            <button id="register" type="submit" className=" btn  btn-success">Registro</button>
+            <button id="register" type="reset" className=" btn  btn-danger m-3">Reset</button>
           </form>
         </div>
-        <div class="col-md-6  d-flex align-items-center justify-content-center p-5">
-          <img
-            class="imageForm img-fluid"
-            src={formIma}
-            alt="Imagen de formulario"
-          />
+        <div className="col-md-6  d-flex align-items-center justify-content-center p-5">
+          <img className="imageForm img-fluid" src={formIma} alt="Imagen de formulario" />
         </div>
       </div>
     </div>
