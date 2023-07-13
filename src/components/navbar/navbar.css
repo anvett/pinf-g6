@@ -12,11 +12,14 @@
   .navbar-menu ul {
     display: flex;
     padding: 0;
+    cursor: pointer;
   }
   
   .navbar-menu li {
     list-style-type: none;
     margin: 0 1rem;
+    color: #0e8d0e;
+    font-weight: 500;
   }
   
   .navbar-menu li a {
